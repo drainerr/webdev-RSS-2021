@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    list-style:none;
+    text-decoration:none;
+    color:white;
+    margin:0;
+    padding:0;
+}
+body{
+    max-width:100%;
+    font-family: 'Roboto', sans-serif;
+}
+#first-screen{
+    width:1600px;
+    max-height: 744px;
+    height:744px;
+    
+    background: url(./assets/bg-image.png);
+}
+#first-screen header{
+    background-color:black;
+    position:relative;
+    width:100%;
+    height:95px;
+}
+#first-screen header #logo{
+    position:absolute;  
+    padding: 25px 50%;
+}
+#first-screen header #logo img{
+    width:44px;
+    height:44px;
+    margin-left:-44px;
+} 
+#first-screen header nav ul{
+    display:flex;
+    padding-top:38px;
+} 
+#first-screen header nav ul li a{
+    font-size:14px;
+    font-weight: normal;
+    opacity: 0.8;
+}
+#first-screen header nav ul li:nth-child(1){
+    margin-left:502px;
+    border-bottom:solid 2px white;
+}
+#first-screen header nav ul li:nth-child(1) a{
+    opacity: 1;
+    font-weight: 500;
+    position: relative;
+}
+#first-screen header nav ul li:nth-child(2){
+    margin-left:85px;
+}
+#first-screen header nav ul li:nth-child(3){
+    margin-left:200px;
+}
+#first-screen header nav ul li:nth-child(4){
+    margin-left:85px;
+}
+#first-screen #your-life{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+#first-screen #your-life h1{
+    font-size:64px;
+    font-weight: 700;
+    margin-top:121px;
+}
+#first-screen #your-life p{
+    width:504px;
+    font-size:18px;
+    text-align: center;
+    margin-top:30px;
+}
+#first-screen #your-life form{
+    margin-top:30px;
+}
+#first-screen  #your-life form button{
+    background: #00AFDB;
+    font-size:14px;
+    font-weight: 700;
+    text-align: center;
+    padding:15px 47px;
+    border:none;
+    font-family: "Roboto";
+}
+#first-screen #your-life form button:hover{
+    animation: scale 1s;
+    cursor:pointer;
+    transform:scale(1.2,1.2);
+    border-radius:10px;
+    background: #009CC2;
+}
+@keyframes scale {
+    from{
+        transform:scale(1,1);
+    }
+    to{
+        transform:scale(1.2,1.2);
+        border-radius: 10px;
+    }
+}
+#first-screen #socials{
+    margin-top:183px;
+}
+#first-screen #socials ul{
+    display:flex;
+    justify-content: center;
+}
+#first-screen #socials ul li{
+    margin:0 15px;
+    display:flex;
+    justify-content: center;
+    width:20px;
+    height:20px;
+}
+#first-screen #socials ul #fb{
+    width:20px;
+    height:20px;
+    background: url(./assets/Ellipse\ 27.svg)  no-repeat ;
+}
+#first-screen #socials ul #fb img{
+    height:10px;
+    width:4.67px;
+}
+#first-screen #socials ul #yt{
+    width:20px;
+    height:20px;
+    background: url(./assets/Ellipse\ 27.svg)  no-repeat;
+}
+#first-screen #socials ul #yt img{
+    width:10px;
+    height:7.8px;
+    padding-bottom:1px;
+}
+#second {
+    height:842px;
+    width: 1600px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#second #content-block h2{
+    color: #373737;
+    font-size:24px;
+    font-weight: 700;
+    width:367px;
+    height: 57px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-transform: uppercase;
+
+}
+#second #content-block p{
+    color: #373737;
+    width:407px;
+    height:80px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top:20px;
+    margin-bottom:30px;
+
+}
+#second #content-block p span{
+    color:black;
+    font-weight: bold;
+} 
+#second #content-block form button{
+    font-size:14px;
+    line-height: 16.41px;
+    text-align: center;
+    background: #00AFDB;
+    font-family: "Roboto";
+    height:46px;
+    width: 184px;
+    border:none;
+    font-weight: bold;
+}
+#second #content-block form button:hover{
+    animation:changeBorderRadius 0.5s;
+    transition:ease-out;
+    border-radius:20px;
+    background: #009CC2;
+    cursor:pointer;
+}
+@keyframes changeBorderRadius{
+    from{
+        border-radius:0;
+    }
+    to{
+        border-radius:20px;
+    }
+}
+#second img{
+    width:407px;
+    height:582px;
+}
+#third{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    width:1600px;
+    height:504px;
+    background-color:#F5F6F7;
+}
+#third #slider-controls{
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 271px;
+    margin-bottom:20px;
+}
+#third #slider-controls #arrow-left img{
+    width:5.66px;
+    height:11.31px;
+}
+#third #slider-controls #arrow-right img{
+    width:5.66px;
+    height:11.31px;
+}
+#third #slider-controls #pagination{
+    display:flex;
+}
+
+#third #slider-controls #pagination li{
+    color:#373737;
+    width:11px;
+    height:18px;
+    line-height:18px;
+    font-size:18px;
+}
+#third #slider-controls #pagination li:nth-child(1){
+    margin-left:15.34px;
+    margin-right:4px;
+}
+#third #slider-controls #pagination li:nth-child(2){
+    width:6.71px;
+    height:13.9px;    
+    margin-right:4px;    
+}
+#third #slider-controls #pagination li:nth-child(3){
+    margin-right:15.34px;
+}
+#third #main-stuff{
+    display:flex;
+    align-items:center;
+}
+#third #main-stuff #user-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:269px;
+    margin-right:124px;
+}
+#third #main-stuff #user-card img{
+    width:45px;
+    height:45px;
+}
+#third #main-stuff #user-card h3{
+    width:160px;
+    height:20px;
+    font-weight: 500;
+    font-size:16px;
+    line-height:20px;
+    text-align: center;
+    color:#4E4E4E;
+    letter-spacing: 2.4px;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+#third #main-stuff #user-card p{
+    width:298px;
+    height:80px;
+    font-weight: 400;
+    font-size:14px;
+    line-height:20px;
+    text-align: center;
+    color:#4E4E4E;
+    
+}
+#third #main-stuff #slider-items ul{
+    display:flex;
+}
+#third #main-stuff #slider-items ul li {
+    margin:0 15px;
+}
+#third #main-stuff #slider-items ul li:nth-child(3){
+    margin-right:-15px;
+}
+
+#fourth{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width:1600px;
+    height:842px;
+
+}
+#fourth img{
+    width:407px;
+    height:582px;
+}
+#fourth #content-block{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    
+}
+#fourth #content-block h2{
+    color: #373737;
+    text-transform: uppercase;
+    width:298px;
+    height:28px;
+    font-weight: 700;
+    font-size:24px;
+    line-height:28px;
+    letter-spacing: 1px;
+}
+#fourth #content-block p{
+    color: #373737;
+    width:407px;
+    height:60px;
+    font-weight: 400;
+    line-height: 20px;
+    font-size:14px;
+    margin-top:20px;
+    margin-bottom:45px;
+}
+#fourth #content-block p span{
+    color:#373737;
+    font-weight: bold;
+}
+#fourth #content-block form button{
+    width:180px;
+    height:46px;
+    align-items:center;
+    background-color:#00AFDB;
+    font-size:14px;
+    font-weight: 700;
+    line-height: 16px;
+    font-family: "Roboto";
+    border: none;   
+}
+#fourth #content-block form button:hover{
+    background: #009CC2;
+    cursor:pointer;
+}
+#fifth{
+    background-image:url(./assets/pexels-christina-morillo-1181675\ 1.png);
+    width:1600px;
+    height:524px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#fifth h2{
+    width:380px;
+    height:28px;
+    font-weight: 700;
+    font-size:24px;
+    line-height:28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#fifth form{
+    display:flex;
+    margin-top:30px;
+}
+#fifth form button{
+    width:66px;
+    height:46px;
+    border:none;
+    background:#00AFDB;
+}
+#fifth form button:hover{
+    background-color:#009CC2;
+    cursor:pointer;
+}
+#fifth form input{
+    width:340px;
+    height:46px;
+    border:none;
+    color:#373737;
+    font-size:14px;
+}
+#sixth{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:1600px;
+    height:464px;
+    background-color: #F5F6F7;
+}
+#sixth h2{
+    color:#373737;
+    width:250px;
+    height:28px;
+    font-weight: 700;
+    font-size:24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#sixth p{
+    color:#373737;
+    width:480px;
+    height:40px;
+    font-size:14px;
+    line-height:20px;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+#sixth #download{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sixth #download #apple{
+    width:184;
+    height:46px;
+    background: #00AFDB;
+    display:flex;
+    align-items: center;
+    border:none;
+    margin-right:46px;
+}
+#sixth #download #apple label{
+    font-size:14px;
+    line-height:16px;
+    padding:15px 18px;
+    font-family: "Roboto";
+    text-align: center;
+}
+#sixth #download #apple label:hover{
+    background-color:#009CC2;
+    transition-delay: .15s;
+    cursor:pointer;
+}
+
+#sixth #download #apple button{
+    width:59px;
+    height:46px;
+    background-color:#009CC2;
+    border:none;
+}
+#sixth #download #apple button img{
+    width:19px;
+    height:22px;
+}
+
+#sixth #download #android{
+    width:184;
+    height:46px;
+    background: #00AFDB;
+    display:flex;
+    align-items: center;
+    border:none;
+}
+#sixth #download #android label{
+    font-size:14px;
+    line-height:16px;
+    padding:15px 18px;
+    font-family: "Roboto";
+    text-align: center;
+}
+#sixth #download #android label:hover{
+    background-color:#009CC2;
+    cursor:pointer;
+}
+
+#sixth #download #android button{
+    width:59px;
+    height:46px;
+    display:flex;
+    justify-content: center;
+    background-color:#009CC2;
+    border:none;
+}
+#sixth #download #android button img{
+    width:15.97px;
+    height:18.25px;
+}
+footer{
+    background-color:black;
+    width:1600px;
+    height:185px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer nav ul{
+    display:flex;
+}
+footer nav ul li{
+    font-size:14px;
+    line-height:20px;
+    margin:0 20px;
+}
+footer nav ul li:nth-child(1){
+    margin-left:-20px;
+}
+footer nav ul li:nth-last-child(1){
+    margin-right:-20px;
+}
+footer img{
+    width:44px;
+    height:44px;
+}
+footer #credits{
+    font-size:14px;
+    line-height:20px;
+    text-align: center;
+    color:#818181;
+}
