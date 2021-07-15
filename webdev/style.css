@@ -89,6 +89,7 @@ body{
 }
 #first-screen #your-life form button:hover{
     animation: scale 1s;
+    transition:.5;
     cursor:pointer;
     transform:scale(1.2,1.2);
     border-radius:10px;
@@ -181,7 +182,7 @@ body{
 }
 #second #content-block form button:hover{
     animation:changeBorderRadius 0.5s;
-    transition:ease-out;
+    transition:0.5s;
     border-radius:20px;
     background: #009CC2;
     cursor:pointer;
@@ -346,6 +347,7 @@ body{
 }
 #fourth #content-block form button:hover{
     background: #009CC2;
+    transition:0.5s;
     cursor:pointer;
 }
 #fifth{
@@ -378,6 +380,7 @@ body{
 }
 #fifth form button:hover{
     background-color:#009CC2;
+    transition: .5s;
     cursor:pointer;
 }
 #fifth form input{
@@ -440,7 +443,7 @@ body{
 }
 #sixth #download #apple label:hover{
     background-color:#009CC2;
-    transition-delay: .15s;
+    transition: .5s;
     cursor:pointer;
 }
 
@@ -472,6 +475,7 @@ body{
 }
 #sixth #download #android label:hover{
     background-color:#009CC2;
+    transition:.5s;
     cursor:pointer;
 }
 
@@ -502,6 +506,14 @@ footer nav ul li{
     font-size:14px;
     line-height:20px;
     margin:0 20px;
+}
+footer nav ul .wrapper{
+    margin:0;
+    height:8px; 
+    display:flex;
+    align-self:center;  
+    border: 1px solid #4E4E4E;
+
 }
 footer nav ul li:nth-child(1){
     margin-left:-20px;
