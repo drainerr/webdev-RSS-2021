@@ -30,7 +30,7 @@ body{
 #first-screen header #logo img{
     width:44px;
     height:44px;
-    margin-left:-44px;
+    margin-left:-22px;
 } 
 #first-screen header nav ul{
     display:flex;
@@ -54,7 +54,7 @@ body{
     margin-left:85px;
 }
 #first-screen header nav ul li:nth-child(3){
-    margin-left:200px;
+    margin-left:222px;
 }
 #first-screen header nav ul li:nth-child(4){
     margin-left:85px;
