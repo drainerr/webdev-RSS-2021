@@ -221,6 +221,11 @@ body{
     width:5.66px;
     height:11.31px;
 }
+#third #slider-controls #arrow-left:hover,#third #slider-controls #arrow-right:hover{
+    cursor:pointer;
+    transition:.2s;
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%) brightness(250%);
+}
 #third #slider-controls #pagination{
     display:flex;
 }
