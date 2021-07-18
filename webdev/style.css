@@ -25,9 +25,7 @@ body{
 }
 #first-screen header #logo{
     position:absolute;  
-    padding-top:25px;
-    padding-left:50%;
-    margin-left:-22px;
+    padding: 25px calc(50% - 22px);
 }
 #first-screen header #logo img{
     width:44px;
