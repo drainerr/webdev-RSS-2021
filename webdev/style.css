@@ -10,74 +10,75 @@ body{
     max-width:100%;
     font-family: 'Roboto', sans-serif;
 }
-#first-screen{
+.first-screen{
     width:1600px;
     max-height: 744px;
     height:744px;
     
     background: url(./assets/bg-image.png);
 }
-#first-screen header{
+.first-screen header{
     background-color:black;
     position:relative;
     width:100%;
     height:95px;
 }
-#first-screen header #logo{
+.first-screen header .logo{
     position:absolute;  
     padding: 25px calc(50% - 22px);
 }
-#first-screen header #logo img{
+.first-screen header .logo img{
     width:44px;
     height:44px;
 } 
-#first-screen header nav ul{
+.first-screen header nav ul{
     display:flex;
+    align-items:center;
+    justify-content: center;
     padding-top:38px;
 } 
-#first-screen header nav ul li a{
+.first-screen header nav ul li a{
     font-size:14px;
     font-weight: normal;
     opacity: 0.8;
 }
-#first-screen header nav ul li:nth-child(1){
-    margin-left:502px;
+.first-screen header nav ul li:nth-child(1){
     border-bottom:solid 2px white;
 }
-#first-screen header nav ul li:nth-child(1) a{
+.first-screen header nav ul li:nth-child(1) a{
     opacity: 1;
     font-weight: 500;
     position: relative;
 }
-#first-screen header nav ul li:nth-child(2){
+.first-screen header nav ul li:nth-child(2){
     margin-left:85px;
 }
-#first-screen header nav ul li:nth-child(3){
+.first-screen header nav ul li:nth-child(3){
     margin-left:222px;
 }
-#first-screen header nav ul li:nth-child(4){
+.first-screen header nav ul li:nth-child(4){
     margin-left:85px;
 }
-#first-screen #your-life{
+.first-screen .your-life{
     display:flex;
     flex-direction:column;
     align-items: center;
 }
-#first-screen #your-life h1{
+.first-screen .your-life h1{
     font-size:64px;
     font-weight: 700;
     margin-top:121px;
 }
-#first-screen #your-life p{
+.first-screen .your-life p{
     width:504px;
     font-size:18px;
     text-align: center;
     margin-top:30px;
 }
-#first-screen #your-life form{
+.first-screen .your-life form{
     margin-top:30px;
 }
-#first-screen  #your-life form button{
+.first-screen  .your-life form button{
     background: #00AFDB;
     font-size:14px;
     font-weight: 700;
@@ -86,7 +87,7 @@ body{
     border:none;
     font-family: "Roboto";
 }
-#first-screen #your-life form button:hover{
+.first-screen .your-life form button:hover{
     animation: scale 1s;
     transition:.5;
     cursor:pointer;
@@ -103,47 +104,47 @@ body{
         border-radius: 10px;
     }
 }
-#first-screen #socials{
+.first-screen .socials{
     margin-top:183px;
 }
-#first-screen #socials ul{
+.first-screen .socials ul{
     display:flex;
     justify-content: center;
 }
-#first-screen #socials ul li{
+.first-screen .socials ul li{
     margin:0 15px;
     display:flex;
     justify-content: center;
     width:20px;
     height:20px;
 }
-#first-screen #socials ul #fb{
+.first-screen .socials ul .fb{
     width:20px;
     height:20px;
     background: url(./assets/Ellipse\ 27.svg)  no-repeat ;
 }
-#first-screen #socials ul #fb img{
+.first-screen .socials ul .fb img{
     height:10px;
     width:4.67px;
 }
-#first-screen #socials ul #yt{
+.first-screen .socials ul .yt{
     width:20px;
     height:20px;
     background: url(./assets/Ellipse\ 27.svg)  no-repeat;
 }
-#first-screen #socials ul #yt img{
+.first-screen .socials ul .yt img{
     width:10px;
     height:7.8px;
     padding-bottom:1px;
 }
-#second {
+.second {
     height:842px;
     width: 1600px;
     display:flex;
     align-items: center;
     justify-content: space-evenly;
 }
-#second #content-block h2{
+.second .content-block h2{
     color: #373737;
     font-size:24px;
     font-weight: 700;
@@ -154,7 +155,7 @@ body{
     text-transform: uppercase;
 
 }
-#second #content-block p{
+.second .content-block p{
     color: #373737;
     width:407px;
     height:80px;
@@ -164,11 +165,11 @@ body{
     margin-bottom:30px;
 
 }
-#second #content-block p span{
+.second .content-block p span{
     color:black;
     font-weight: bold;
 } 
-#second #content-block form button{
+.second .content-block form button{
     font-size:14px;
     line-height: 16.41px;
     text-align: center;
@@ -179,7 +180,7 @@ body{
     border:none;
     font-weight: bold;
 }
-#second #content-block form button:hover{
+.second .content-block form button:hover{
     animation:changeBorderRadius 0.5s;
     transition:0.5s;
     border-radius:20px;
@@ -194,11 +195,11 @@ body{
         border-radius:20px;
     }
 }
-#second img{
+.second img{
     width:407px;
     height:582px;
 }
-#third{
+.third{
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -206,53 +207,53 @@ body{
     height:504px;
     background-color:#F5F6F7;
 }
-#third #slider-controls{
+.third .slider-controls{
     display:flex;
     justify-content: flex-end;
     margin-right: 271px;
     margin-bottom:20px;
 }
-#third #slider-controls #arrow-left img{
+.third .slider-controls .arrow-left img{
     width:5.66px;
     height:11.31px;
 }
-#third #slider-controls #arrow-right img{
+.third .slider-controls .arrow-right img{
     width:5.66px;
     height:11.31px;
 }
-#third #slider-controls #arrow-left:hover,#third #slider-controls #arrow-right:hover{
+.third .slider-controls .arrow-left:hover,.third .slider-controls .arrow-right:hover{
     cursor:pointer;
     transition:.2s;
     filter: sepia(100%) hue-rotate(190deg) saturate(500%) brightness(250%);
 }
-#third #slider-controls #pagination{
+.third .slider-controls .pagination{
     display:flex;
 }
 
-#third #slider-controls #pagination li{
+.third .slider-controls .pagination li{
     color:#373737;
     width:11px;
     height:18px;
     line-height:18px;
     font-size:18px;
 }
-#third #slider-controls #pagination li:nth-child(1){
+.third .slider-controls .pagination li:nth-child(1){
     margin-left:15.34px;
     margin-right:4px;
 }
-#third #slider-controls #pagination li:nth-child(2){
+.third .slider-controls .pagination li:nth-child(2){
     width:6.71px;
     height:13.9px;    
     margin-right:4px;    
 }
-#third #slider-controls #pagination li:nth-child(3){
+.third .slider-controls .pagination li:nth-child(3){
     margin-right:15.34px;
 }
-#third #main-stuff{
+.third .main-stuff{
     display:flex;
     align-items:center;
 }
-#third #main-stuff #user-card{
+.third .main-stuff .user-card{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -260,11 +261,11 @@ body{
     margin-left:269px;
     margin-right:124px;
 }
-#third #main-stuff #user-card img{
+.third .main-stuff .user-card img{
     width:45px;
     height:45px;
 }
-#third #main-stuff #user-card h3{
+.third .main-stuff .user-card h3{
     width:160px;
     height:20px;
     font-weight: 500;
@@ -276,7 +277,7 @@ body{
     margin-top:20px;
     margin-bottom:10px;
 }
-#third #main-stuff #user-card p{
+.third .main-stuff .user-card p{
     width:298px;
     height:80px;
     font-weight: 400;
@@ -286,17 +287,17 @@ body{
     color:#4E4E4E;
     
 }
-#third #main-stuff #slider-items ul{
+.third .main-stuff .slider-items ul{
     display:flex;
 }
-#third #main-stuff #slider-items ul li {
+.third .main-stuff .slider-items ul li {
     margin:0 15px;
 }
-#third #main-stuff #slider-items ul li:nth-child(3){
+.third .main-stuff .slider-items ul li:nth-child(3){
     margin-right:-15px;
 }
 
-#fourth{
+.fourth{
     display:flex;
     align-items:center;
     justify-content:space-evenly;
@@ -304,17 +305,17 @@ body{
     height:842px;
 
 }
-#fourth img{
+.fourth img{
     width:407px;
     height:582px;
 }
-#fourth #content-block{
+.fourth .content-block{
     display: flex;
     justify-content: center;
     flex-direction:column;
     
 }
-#fourth #content-block h2{
+.fourth .content-block h2{
     color: #373737;
     text-transform: uppercase;
     width:298px;
@@ -324,7 +325,7 @@ body{
     line-height:28px;
     letter-spacing: 1px;
 }
-#fourth #content-block p{
+.fourth .content-block p{
     color: #373737;
     width:407px;
     height:60px;
@@ -334,11 +335,11 @@ body{
     margin-top:20px;
     margin-bottom:45px;
 }
-#fourth #content-block p span{
+.fourth .content-block p span{
     color:#373737;
     font-weight: bold;
 }
-#fourth #content-block form button{
+.fourth .content-block form button{
     width:180px;
     height:46px;
     align-items:center;
@@ -349,12 +350,12 @@ body{
     font-family: "Roboto";
     border: none;   
 }
-#fourth #content-block form button:hover{
+.fourth .content-block form button:hover{
     background: #009CC2;
     transition:0.5s;
     cursor:pointer;
 }
-#fifth{
+.fifth{
     background-image:url(./assets/pexels-christina-morillo-1181675\ 1.png);
     width:1600px;
     height:524px;
@@ -363,7 +364,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-#fifth h2{
+.fifth h2{
     width:380px;
     height:28px;
     font-weight: 700;
@@ -372,29 +373,29 @@ body{
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-#fifth form{
+.fifth form{
     display:flex;
     margin-top:30px;
 }
-#fifth form button{
+.fifth form button{
     width:66px;
     height:46px;
     border:none;
     background:#00AFDB;
 }
-#fifth form button:hover{
+.fifth form button:hover{
     background-color:#009CC2;
     transition: .5s;
     cursor:pointer;
 }
-#fifth form input{
+.fifth form input{
     width:340px;
     height:46px;
     border:none;
     color:#373737;
     font-size:14px;
 }
-#sixth{
+.sixth{
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -403,7 +404,7 @@ body{
     height:464px;
     background-color: #F5F6F7;
 }
-#sixth h2{
+.sixth h2{
     color:#373737;
     width:250px;
     height:28px;
@@ -414,7 +415,7 @@ body{
     text-align: center;
     text-transform: uppercase;
 }
-#sixth p{
+.sixth p{
     color:#373737;
     width:480px;
     height:40px;
@@ -424,12 +425,12 @@ body{
     margin-top:20px;
     margin-bottom:30px;
 }
-#sixth #download{
+.sixth .download{
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
-#sixth #download #apple{
+.sixth .download .apple{
     width:184;
     height:46px;
     background: #00AFDB;
@@ -438,31 +439,31 @@ body{
     border:none;
     margin-right:46px;
 }
-#sixth #download #apple label{
+.sixth .download .apple label{
     font-size:14px;
     line-height:16px;
     padding:15px 18px;
     font-family: "Roboto";
     text-align: center;
 }
-#sixth #download #apple label:hover{
+.sixth .download .apple label:hover{
     background-color:#009CC2;
     transition: .5s;
     cursor:pointer;
 }
 
-#sixth #download #apple button{
+.sixth .download .apple button{
     width:59px;
     height:46px;
     background-color:#009CC2;
     border:none;
 }
-#sixth #download #apple button img{
+.sixth .download .apple button img{
     width:19px;
     height:22px;
 }
 
-#sixth #download #android{
+.sixth .download .android{
     width:184;
     height:46px;
     background: #00AFDB;
@@ -470,20 +471,20 @@ body{
     align-items: center;
     border:none;
 }
-#sixth #download #android label{
+.sixth .download .android label{
     font-size:14px;
     line-height:16px;
     padding:15px 18px;
     font-family: "Roboto";
     text-align: center;
 }
-#sixth #download #android label:hover{
+.sixth .download .android label:hover{
     background-color:#009CC2;
     transition:.5s;
     cursor:pointer;
 }
 
-#sixth #download #android button{
+.sixth .download .android button{
     width:59px;
     height:46px;
     display:flex;
@@ -491,7 +492,7 @@ body{
     background-color:#009CC2;
     border:none;
 }
-#sixth #download #android button img{
+.sixth .download .android button img{
     width:15.97px;
     height:18.25px;
 }
@@ -517,7 +518,6 @@ footer nav ul .wrapper{
     display:flex;
     align-self:center;  
     border: 1px solid #4E4E4E;
-
 }
 footer nav ul li:nth-child(1){
     margin-left:-20px;
@@ -529,9 +529,22 @@ footer img{
     width:44px;
     height:44px;
 }
-footer #credits{
+footer .credits{
     font-size:14px;
     line-height:20px;
     text-align: center;
     color:#818181;
+}
+
+@media only screen and (max-width: 1400px){
+    .first-screen,.second,.third,.fourth,.fifth,.sixth,footer{
+        max-width:1600px;
+        width:100%;
+    }
+    .third .main-stuff{
+        justify-content: center;
+    }
+    .third .main-stuff .user-card{
+        margin-left:0;
+    }
 }
