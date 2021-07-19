@@ -95,7 +95,6 @@ body{
     transition:.5;
     cursor:pointer;
     transform:scale(1.2,1.2);
-    border-radius:10px;
     background: #009CC2;
 }
 @keyframes scale {
@@ -104,7 +103,6 @@ body{
     }
     to{
         transform:scale(1.2,1.2);
-        border-radius: 10px;
     }
 }
 .first-screen .socials{
@@ -169,19 +167,9 @@ body{
     font-weight: bold;
 }
 .second .content-block form button:hover{
-    animation:changeBorderRadius 0.5s;
-    transition:0.5s;
-    border-radius:20px;
     background: #009CC2;
+    transition:0.5s;
     cursor:pointer;
-}
-@keyframes changeBorderRadius{
-    from{
-        border-radius:0;
-    }
-    to{
-        border-radius:20px;
-    }
 }
 .second img{
     width:407px;
