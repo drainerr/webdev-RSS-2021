@@ -7,7 +7,6 @@
     padding:0;
 }
 body{
-    max-width:100%;
     font-family: 'Roboto', sans-serif;
 }
 .first-screen{
@@ -16,6 +15,7 @@ body{
     height:744px;
     
     background: url(./assets/bg-image.png);
+    background-size:contain;
 }
 .first-screen header{
     background-color:black;
@@ -529,7 +529,6 @@ footer .credits{
 
 @media only screen and (max-width: 1400px){
     .first-screen,.second,.third,.fourth,.fifth,.sixth,footer{
-        max-width:1600px;
         width:100%;
     }
     .third .main-stuff{
